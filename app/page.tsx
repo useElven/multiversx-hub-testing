@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             sign transactions via the wrapper app. You can utilize xPortal,
             Ledger, and browser extension. Without 2FA (guardian) redirects.
           </div>
-          <div className="text-xs text-center mx-auto">
+          <div className="text-xs text-center mx-auto mb-3">
             To test the MultiversX Apps Hub (webview) on the devnet, please
             connect your wallet and enter the URL of an application that
             utilizes useElven version 0.20.0 or later.
