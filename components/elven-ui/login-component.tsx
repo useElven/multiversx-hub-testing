@@ -83,13 +83,13 @@ export const LoginComponent = memo(() => {
           >
             MultiversX Browser Extension
           </Button>
-          <Button
+          {/* <Button
             className="w-full select-none h-auto py-3"
             variant="outline"
             onClick={handleLogin(LoginMethodsEnum.wallet)}
           >
             MultiversX Web Wallet
-          </Button>
+          </Button> */}
           <Button
             className="w-full select-none h-auto py-3"
             variant="outline"
@@ -97,13 +97,13 @@ export const LoginComponent = memo(() => {
           >
             Ledger
           </Button>
-          <Button
+          {/* <Button
             className="w-full select-none h-auto py-3"
             variant="outline"
             onClick={handleLogin(LoginMethodsEnum.xalias)}
           >
             xAlias
-          </Button>
+          </Button> */}
         </div>
       )}
 
