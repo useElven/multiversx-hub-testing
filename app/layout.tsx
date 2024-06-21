@@ -11,7 +11,8 @@ import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
+const dappHostname =
+  process.env.NEXT_PUBLIC_DAPP_HOST || 'http://localhost:3000';
 const globalTitle = 'useElven MultiversX Apps Hub testing';
 const globalDescription =
   'An app for testing the MultiversX Apps Hub integration in apps using useElven';

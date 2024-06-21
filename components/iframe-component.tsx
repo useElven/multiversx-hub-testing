@@ -96,6 +96,7 @@ export const IframeComponent = () => {
   const { accessToken } = useLoginInfo();
 
   const [url, setUrl] = useState<string>();
+  const [error, setError] = useState(false);
 
   const handleUrl = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -106,6 +107,9 @@ export const IframeComponent = () => {
     if (isFullUrl || isLocalhost) {
       setUrl(`${value}?accessToken=${accessToken}`);
       e.currentTarget.reset();
+      setError(false);
+    } else {
+      setError(true);
     }
   };
 
@@ -133,17 +137,22 @@ export const IframeComponent = () => {
           </div>
         }
       >
-        <form
-          onSubmit={handleUrl}
-          className="w-full flex items-center justify-center p-6"
-        >
-          <Input
-            name="url"
-            className="border rounded-sm mr-2"
-            placeholder="Provide URL of an app that uses useElven at least v0.20.0"
-          />
-          <Button>Connect</Button>
+        <form onSubmit={handleUrl} className="w-full p-6">
+          <div className="flex items-center justify-center">
+            <Input
+              name="url"
+              className="border rounded-sm mr-2"
+              placeholder="Provide URL of an app that uses useElven at least v0.20.0"
+            />
+            <Button>Connect</Button>
+          </div>
+          {error && (
+            <div className="text-xs text-destructive mt-2">
+              Please include the full URL, starting with &apos;https://&apos;
+            </div>
+          )}
         </form>
+
         <Iframe url={url} />
       </Authenticated>
     </div>

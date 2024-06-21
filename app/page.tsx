@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { CardContent, Card } from '@/components/ui/card';
-import { IframeComponent } from './iframeComponent';
+import { IframeComponent } from '@/components/iframe-component';
 
 const Home: NextPage = () => {
   return (
