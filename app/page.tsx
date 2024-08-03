@@ -8,8 +8,8 @@ const Home: NextPage = () => {
       <Card className="mb-4">
         <CardContent className="mt-6 pb-0">
           <div className="text-xs text-center mx-auto mb-2">
-            The app simulates the MultiversX Web Wallet Hub by attaching the
-            accessToken. It uses MultiversX{' '}
+            The app simulates the MultiversX Web Wallet Hub and xPortal Discover
+            by attaching the accessToken. It uses MultiversX{' '}
             <a
               href="https://github.com/multiversx/mx-sdk-js-webview-provider"
               rel="nofollow"
@@ -24,7 +24,23 @@ const Home: NextPage = () => {
           <div className="text-xs text-center mx-auto mb-3">
             To test the MultiversX Apps Hub (webview) on the devnet, please
             connect your wallet and enter the URL of an application that
-            utilizes useElven version 0.20.0 or later.
+            utilizes{' '}
+            <a
+              href="https://www.useelven.com"
+              target="_blank"
+              className="underline"
+            >
+              useElven
+            </a>{' '}
+            version from 0.20.0 and{' '}
+            <a
+              href="https://www.elvenjs.com"
+              target="_blank"
+              className="underline"
+            >
+              elven.js
+            </a>{' '}
+            version from 0.19.0.
             <br />
             <strong>
               For testing purposes, only connect to applications you are

@@ -142,7 +142,7 @@ export const IframeComponent = () => {
             <Input
               name="url"
               className="border rounded-sm mr-2"
-              placeholder="Provide URL of an app that uses useElven at least v0.20.0"
+              placeholder="Provide URL of an app that uses useElven at least v0.20.0 or elven.js at least v0.19.0"
             />
             <Button>Connect</Button>
           </div>

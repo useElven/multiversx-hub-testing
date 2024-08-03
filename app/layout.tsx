@@ -13,16 +13,17 @@ const inter = Inter({ subsets: ['latin'] });
 
 const dappHostname =
   process.env.NEXT_PUBLIC_DAPP_HOST || 'http://localhost:3000';
-const globalTitle = 'useElven MultiversX Apps Hub testing';
+const globalTitle =
+  'useElven and elven.js MultiversX web view provider testing';
 const globalDescription =
-  'An app for testing the MultiversX Apps Hub integration in apps using useElven';
+  'An app for testing the MultiversX Apps Hub integration in apps using useElven and elven.js';
 const globalImage = `${dappHostname}/og-image.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(dappHostname!),
   title: globalTitle,
   description: globalDescription,
-  authors: { name: 'useElven', url: 'https://www.useElven.com' },
+  authors: { name: 'Elven Family', url: 'https://www.elven.family' },
   openGraph: {
     title: globalTitle,
     images: [globalImage],
@@ -53,7 +54,7 @@ export default function RootLayout({
               <Link href="/">
                 <div className="flex items-center gap-2 relative select-none">
                   <span className="cursor-pointer mb-0 text-4xl font-black text-center">
-                    useElven MultiversX Hub testing (devnet)
+                    MultiversX web view provider testing (devnet)
                   </span>
                 </div>
               </Link>
@@ -77,7 +78,7 @@ export default function RootLayout({
           <div className="flex h-[120px] items-center">
             <div className="flex flex-col items-center justify-center container mx-auto text-center text-sm">
               <div className="font-bold">
-                useElven MultiversX Apps Hub testing (v
+                useElven and elven.js MultiversX web view provider testing (v
                 {`${packageJson.version}`})
               </div>
               <div className="text-xs font-light">Support Our Project.</div>
