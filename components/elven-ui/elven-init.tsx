@@ -13,6 +13,7 @@ export const ElvenInit = () => {
     ...(process.env.NEXT_PUBLIC_MULTIVERSX_API
       ? { apiAddress: process.env.NEXT_PUBLIC_MULTIVERSX_API }
       : {}),
+    walletConnectV2ProjectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID,
   });
   return null;
 };
