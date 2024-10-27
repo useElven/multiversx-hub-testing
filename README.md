@@ -7,13 +7,17 @@ It should work with apps built with:
 - [useElven](https://www.useelven.com)
 - [elven.js](https://www.elvenjs.com)
 
-Only for testing on the devnet, connect apps you know. There is no restriction for loaded domains.
+This is only for testing on the devnet, connect apps, you know. There is no restriction on loaded domains.
+
+### How it works
+
+The app simulates the MultiversX Web Wallet Hub and xPortal Discover by attaching the accessToken. It uses MultiversX webview provider. Once loaded, the app will automatically connect, allowing you to sign transactions via the wrapper app. You can utilize xPortal, Ledger, and browser extension. Without 2FA (guardian) redirects.
 
 ### How to use it
 
 1. Go to [multiversx-apps-hub-testing.netlify.app](https://multiversx-apps-hub-testing.netlify.app)
-2. Enter the URL of an app that supports MultiversX Hub and useElven at least v0.20.0
-3. The app will be loaded into the iframe and it will be connected already
+2. Enter the URL of an app that is built with sdk-dapp, useElven at least v0.20.0 or elven.js at least v0.19.0
+3. The app will be loaded into the iframe, and it will be connected already
 4. Sign transactions
 
 ### Development (local run)
