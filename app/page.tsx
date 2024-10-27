@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <div className="text-xs text-center mx-auto mb-3">
             To test the MultiversX Apps Hub (webview) on the devnet, please
             connect your wallet and enter the URL of an application that
-            utilizes{' '}
+            utilizes sdk-dapp,{' '}
             <a
               href="https://www.useelven.com"
               target="_blank"
