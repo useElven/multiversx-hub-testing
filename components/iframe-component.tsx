@@ -3,15 +3,19 @@
 import { Authenticated } from '@/components/elven-ui/authenticated';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Transaction, TransactionsConverter } from '@multiversx/sdk-core';
+import {
+  IPlainTransactionObject,
+  TransactionsConverter,
+} from '@multiversx/sdk-core';
 import { useLoginInfo, useNetwork, useSignMessage } from '@useelven/core';
 import { FormEvent, useEffect, useRef, useState } from 'react';
 
 const Iframe = ({ url }: { url?: string }) => {
   const { dappProvider } = useNetwork();
-  const [transaction, setTransaction] = useState<Transaction | undefined>();
+  const [transaction, setTransaction] = useState<
+    IPlainTransactionObject | undefined
+  >();
   const { signMessage, signature } = useSignMessage();
-
   const [messageType, setMessageType] = useState<string>();
 
   const ref = useRef<HTMLIFrameElement>(null);
@@ -27,7 +31,7 @@ const Iframe = ({ url }: { url?: string }) => {
           const tx = converter.plainObjectToTransaction(transactions[0]);
           setMessageType('SIGN_TRANSACTIONS_REQUEST');
           const signedTx = await dappProvider!.signTransaction(tx);
-          setTransaction(signedTx as Transaction);
+          setTransaction(converter.transactionToPlainObject(signedTx!));
           break;
         case 'SIGN_MESSAGE_REQUEST':
           const messageToSign = payload?.message;
