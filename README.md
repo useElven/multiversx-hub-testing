@@ -1,10 +1,13 @@
-### MultiversX Apps Hub testing app
+### MultiversX Webview testing app
 
-An app designed to test the integration of the MultiversX [Web Wallet Hub](https://wallet.multiversx.com/hub) using the [webview provider](https://github.com/multiversx/mx-sdk-js-webview-provider/tree/main) and [useElven](https://www.useelven.com).
+An app designed to test the integration of the MultiversX **xPortal Discovery** directory and [Web Wallet Hub](https://wallet.multiversx.com/hub) using the [webview provider](https://github.com/multiversx/mx-sdk-js-webview-provider/tree/main).
 
-If should also work the same for xPortal Hub.
+It should work with apps built with:
+- [sdk-dapp](https://github.com/multiversx/mx-sdk-dapp)
+- [useElven](https://www.useelven.com)
+- [elven.js](https://www.elvenjs.com)
 
-Only for testing, connect apps you know. There is no restriction for loaded domains.
+Only for testing on the devnet, connect apps you know. There is no restriction for loaded domains.
 
 ### How to use it
 
@@ -20,18 +23,7 @@ Only for testing, connect apps you know. There is no restriction for loaded doma
 3. `cp .env.example .env.local`
 4. `npm run dev`
 
-### Other tools
+### Built with
 
-Compact MultiversX SDK for browsers (no build steps required)
-
-- [Elven.js](https://www.elvenjs.com)
-
-Tools that can help you with interactions:
-
-- [Buildo.dev](https://www.buildo.dev)
-- [Next.js Dapp template](https://github.com/xdevguild/nextjs-dapp-template)
-- [Elven Tools](https://www.elven.tools)
-
-### Contact
-
-- [julian.io](https://www.julian.io)
+- MultiversX JS SDKs
+- useElven.com

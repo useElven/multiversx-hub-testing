@@ -15,7 +15,7 @@ const dappHostname =
   process.env.NEXT_PUBLIC_DAPP_HOST || 'http://localhost:3000';
 const globalTitle = 'MultiversX webview provider testing';
 const globalDescription =
-  'An app for testing the MultiversX Apps Hub integration in apps using useElven and elven.js but also sdk-dapp';
+  'An app for testing the MultiversX Webview integration in apps using useElven and elven.js but also sdk-dapp';
 const globalImage = `${dappHostname}/og-image.png`;
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function RootLayout({
               <div className="flex items-center gap-5">
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://github.com/useElven/multiversx-hub-testing"
+                    href="https://github.com/xdevguild/multiversx-webview-testing"
                     target="_blank"
                   >
                     <Github size={30} />

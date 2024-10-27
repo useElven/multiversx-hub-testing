@@ -3,10 +3,10 @@
   "version": "0.0.4",
   "author": "Julian Ćwirko <julian.io>",
   "license": "MIT",
-  "homepage": "https://github.com/useElven/multiversx-apps-hub-testing",
+  "homepage": "https://github.com/xdevguild/multiversx-webview-testing",
   "repository": {
     "type": "git",
-    "url": "https://github.com/useElven/multiversx-apps-hub-testing"
+    "url": "https://github.com/xdevguild/multiversx-webview-testing"
   },
   "private": true,
   "scripts": {

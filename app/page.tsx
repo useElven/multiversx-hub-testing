@@ -22,9 +22,8 @@ const Home: NextPage = () => {
             Ledger, and browser extension. Without 2FA (guardian) redirects.
           </div>
           <div className="text-xs text-center mx-auto mb-3">
-            To test the MultiversX Apps Hub (webview) on the devnet, please
-            connect your wallet and enter the URL of an application that
-            utilizes sdk-dapp,{' '}
+            To test the MultiversX Webview on the devnet, please connect your
+            wallet and enter the URL of an application that utilizes sdk-dapp,{' '}
             <a
               href="https://www.useelven.com"
               target="_blank"
