@@ -1,3 +1,7 @@
+### 0.0.5 (2024-11-10)
+- update useElven
+- update dependencies
+
 ### 0.0.4 (2024-10-26)
 - pass Wallet Connect id
 - prevent double sending the transaction
